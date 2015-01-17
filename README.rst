@@ -1,6 +1,14 @@
 Flask-Responses
 ================
 
+.. image:: https://secure.travis-ci.org/Parkayun/flask-responses.svg?branch=master
+   :alt: Build Status
+   :target: https://travis-ci.org/Parkayun/-responses
+
+.. image:: https://img.shields.io/coveralls/Parkayun/flask-responses.svg
+   :alt: Coverage Status
+   :target: https://coveralls.io/r/dahliaParkayun/flask-responses
+
 .. module:: flask.ext.responses
 
 Simple response utility for `Flask`.
