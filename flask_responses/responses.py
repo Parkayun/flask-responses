@@ -20,7 +20,7 @@ def json_response(data, status_code=200, headers=None):
 def xml_response(data, status_code=200, headers=None):
     res = Response(data, mimetype='text/xml')
     res.status_code = status_code
-    
+
     if isinstance(headers, dict):
         res = set_headers(res, headers)
 

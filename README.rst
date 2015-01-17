@@ -1,5 +1,5 @@
 Flask-Responses
-===============
+================
 
 .. module:: flask.ext.responses
 
@@ -8,22 +8,22 @@ Simple response utility for `Flask`.
 .. _Flask: http://flask.pocoo.org/
 
 Installation
-------------
+-------------
 
-Install the extension::
+.. sourcecode:: bash
 
-    $ python setup.py install
+   ~ $ python setup.py install
 
-Usage
-------------
+Quick start
+-----------
 
-Quick start::
+.. sourcecode:: python
 
-    from flask import Flask
-    from flask.ext.responses import json_response
-    
-    app = Flask(__name__)
+   from flask import Flask
+   from flask.ext.responses import json_response
 
-    @app.route("/")
-    def hello():
-        return json_response({"message": "Hello World!"})
+   app = Flask(__name__)
+
+   @app.route("/")
+   def hello():
+       return json_response({"message": "Hello World!"})
