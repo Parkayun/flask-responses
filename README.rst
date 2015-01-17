@@ -26,19 +26,24 @@ Quick start
 .. sourcecode:: python
 
    from flask import Flask
-   from flask.ext.responses import json_response
+   from flask.ext.responses import json_response, xml_response
 
    app = Flask(__name__)
 
-   @app.route("/")
+   @app.route("/json")
    def hello():
        return json_response({"message": "Hello World!"})
+       
+   @app.route("/xml")
+   def world():
+      from dicttoxml import dicttoxml # 3rd party packge (dict to xml)
+      return xml_response(dicttoxml({"message": "Hello World!"}))
        
 Responses
 ---------
 * JSON (json_response)
+* XML (xml_response)
 
 ToDo
 ----
-* XML
 * Server Sent Evnets
