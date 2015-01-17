@@ -1,6 +1,6 @@
 """
 Flask-Responses
--------------
+---------------
 Simple response utility for flask
 """
 from setuptools import setup
