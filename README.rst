@@ -13,6 +13,12 @@ Installation
 .. sourcecode:: bash
 
    ~ $ python setup.py install
+   
+or can use pip
+
+.. sourcecode:: bash
+
+   ~ $ pip install flask-responses
 
 Quick start
 -----------
@@ -27,3 +33,12 @@ Quick start
    @app.route("/")
    def hello():
        return json_response({"message": "Hello World!"})
+       
+Responses
+---------
+* JSON (json_response)
+
+ToDo
+----
+* XML
+* Server Sent Evnets
