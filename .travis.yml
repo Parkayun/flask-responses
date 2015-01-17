@@ -8,7 +8,9 @@ python:
   - pypy
   - pypy3
 install:
-  - "python setup.py install"
-script: nosetests
+  - python setup.py install
+  - pip install coverage
+script: 
+  - nosetests --with-coverage
 after_success:
   - coveralls
