@@ -3,7 +3,16 @@ Flask-Responses
 ---------------
 Simple response utility for flask
 """
+
+from os import path
 from setuptools import setup
+
+long_description = open(
+    path.join(
+        path.dirname(__file__),
+        'README.rst'
+    )
+).read()
 
 setup(
     name='Flask-Responses',
@@ -13,7 +22,7 @@ setup(
     author='Ayun Park',
     author_email='iamparkayun@gmail.com',
     description='Simple response utility for Flask',
-    long_description=__doc__,
+    long_description=long_description,
     packages=['flask_responses'],
     zip_safe=False,
     platforms='any',
