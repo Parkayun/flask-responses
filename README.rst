@@ -7,7 +7,7 @@ Flask-Responses
 
 .. image:: https://secure.travis-ci.org/Parkayun/flask-responses.svg?branch=master
    :alt: Build Status
-   :target: https://travis-ci.org/Parkayun/-responses
+   :target: https://travis-ci.org/Parkayun/flask-responses
 
 .. image:: https://img.shields.io/coveralls/Parkayun/flask-responses.svg
    :alt: Coverage Status
