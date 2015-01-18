@@ -1,6 +1,10 @@
 Flask-Responses
 ================
 
+.. image:: https://pypip.in/version/flask-responses/badge.svg
+    :target: https://pypi.python.org/pypi/flask-responses/
+    :alt: Latest Version
+
 .. image:: https://secure.travis-ci.org/Parkayun/flask-responses.svg?branch=master
    :alt: Build Status
    :target: https://travis-ci.org/Parkayun/-responses
