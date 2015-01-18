@@ -11,7 +11,7 @@ Flask-Responses
 
 .. image:: https://img.shields.io/coveralls/Parkayun/flask-responses.svg
    :alt: Coverage Status
-   :target: https://coveralls.io/r/dahliaParkayun/flask-responses
+   :target: https://coveralls.io/r/Parkayun/flask-responses
 
 .. module:: flask.ext.responses
 
