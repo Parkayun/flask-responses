@@ -16,7 +16,7 @@ long_description = open(
 
 setup(
     name='Flask-Responses',
-    version='0.1',
+    version='0.2',
     url='https://github.com/Parkayun/flask-responses',
     license='BSD',
     author='Ayun Park',
