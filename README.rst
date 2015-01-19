@@ -64,4 +64,4 @@ Responses
 ToDo
 ----
 * allow origin cross domain
-* server sent evnets
+* server sent events
