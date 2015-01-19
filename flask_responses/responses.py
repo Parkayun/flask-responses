@@ -19,6 +19,10 @@ def json_response(data, status_code=200, headers=None):
 
 
 def xml_response(data, status_code=200, headers=None):
+    if isinstance(data, dict):
+        from dicttoxml import dicttoxml
+        data = dicttoxml(data)
+
     res = Response(data, mimetype='text/xml')
     res.status_code = status_code
 
