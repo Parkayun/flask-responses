@@ -1,5 +1,5 @@
-Flask-Responses
-================
+Flask-Responses 0.2
+===================
 
 .. image:: https://pypip.in/version/flask-responses/badge.svg
     :target: https://pypi.python.org/pypi/flask-responses/
@@ -38,18 +38,21 @@ Quick start
 .. sourcecode:: python
 
    from flask import Flask
-   from flask.ext.responses import json_response, xml_response
+   from flask.ext.responses import json_response, xml_response, auto_response
 
    app = Flask(__name__)
 
    @app.route("/json")
    def hello():
-       return json_response({"message": "Hello World!"})
+       return json_response({"message": "Hello World!"}, status_code=201)
        
    @app.route("/xml")
    def world():
-      from dicttoxml import dicttoxml # 3rd party packge (dict to xml)
-      return xml_response(dicttoxml({"message": "Hello World!"}))
+      return xml_response({"message": "Hello World!"}, headers={'x-foo': 'bar'}) # or can do this xml_response('<message>Hello World</message>')
+      
+   @app.route("/auto")
+   def auto():
+      return auto_response({"message": "Hello World!"}, status_code=201, headers={'x-foo': 'bar'})
        
 Responses
 ---------
@@ -58,4 +61,5 @@ Responses
 
 ToDo
 ----
-* Server Sent Evnets
+* allow origin cross domain
+* server sent evnets
