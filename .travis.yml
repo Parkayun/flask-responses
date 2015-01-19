@@ -11,6 +11,6 @@ install:
   - python setup.py install
   - pip install coverage coveralls
 script: 
-  - nosetests --with-coverage
+  - nosetests --with-coverage --cover-package=flask_responses tests
 after_success:
   - coveralls
