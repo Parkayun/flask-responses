@@ -42,5 +42,5 @@ def auto_response(*args, **kwargs):
     elif accept_type == mime_types[1]:
         return xml_response(*args, **kwargs)
 
-    data = str(args[0]) if isinstance(args[0], dict) else args
+    data = str(args[0]) if isinstance(args[0], dict) else args[0]
     return data
