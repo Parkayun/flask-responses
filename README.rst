@@ -48,10 +48,12 @@ Quick start
        
    @app.route("/xml")
    def world():
-      return xml_response({"message": "Hello World!"}, headers={'x-foo': 'bar'}) # or can do this xml_response('<message>Hello World</message>')
+      # or can do this return xml_response('<message>Hello World</message>')
+      return xml_response({"message": "Hello World!"}, headers={'x-foo': 'bar'}) 
       
    @app.route("/auto")
    def auto():
+      # auto response json or xml by Accept request header
       return auto_response({"message": "Hello World!"}, status_code=201, headers={'x-foo': 'bar'})
        
 Responses
