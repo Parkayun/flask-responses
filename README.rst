@@ -1,7 +1,7 @@
 Flask-Responses 0.2
 ===================
 
-.. image:: https://pypip.in/version/flask-responses/badge.svg
+.. image:: https://pypip.in/v/flask-responses/badge.svg
     :target: https://pypi.python.org/pypi/flask-responses/
     :alt: Latest Version
 
