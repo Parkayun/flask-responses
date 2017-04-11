@@ -1,9 +1,9 @@
 Flask-Responses 0.2
 ===================
 
-.. image:: https://pypip.in/v/flask-responses/badge.svg
-    :target: https://pypi.python.org/pypi/flask-responses/
+.. image:: http://badge.kloud51.com/pypi/v/flask-responses.svg
     :alt: Latest Version
+    :target: https://pypi.python.org/pypi/flask-responses/
 
 .. image:: https://secure.travis-ci.org/Parkayun/flask-responses.svg?branch=master
    :alt: Build Status
